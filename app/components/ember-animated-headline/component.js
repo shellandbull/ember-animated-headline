@@ -1,0 +1,1 @@
+export { default } from 'ember-animated-headline/components/ember-animated-headline/component';
