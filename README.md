@@ -2,6 +2,20 @@
 
 A small component that animates a list of words :godmode:
 
+![](http://i.imgur.com/1VJe1G8.gif)
+
+# Installation
+
+`$ ember install ember-animated-headline`
+
+And don't forget to add the stylesheet to your `app.scss`
+
+```css
+import "ember-animated-headline";
+```
+
+# Usage
+
 | parameter | value            | usage                                   |
 |:---------:|------------------|-----------------------------------------|
 | `options` | `['one', 'two']` | the collection of values to be rendered |
@@ -11,7 +25,6 @@ A small component that animates a list of words :godmode:
 {{ember-animated-headline options=options delay=delay}}
 ```
 
-Will give you:
 
 
 
