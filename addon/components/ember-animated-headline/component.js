@@ -11,16 +11,16 @@ export default Ember.Component.extend({
   classNames: ['ember-animated-headline'],
   delay: ANIMATION_DELAY,
   tagName: '',
-  optionsArray: [],
+  options: [],
 
   // CPs
-  firstOption: computed('optionsArray.[]', function() {
-    return this.get('optionsArray')[0];
+  firstOption: computed('options.[]', function() {
+    return this.get('options')[0];
   }),
 
-  restOptions: computed('optionsArray.[]', function() {
-    const optionsArray = this.get('optionsArray');
-    return optionsArray.slice(1, optionsArray.length);
+  restOptions: computed('options.[]', function() {
+    const options = this.get('options');
+    return options.slice(1, options.length);
   }),
 
   // Hooks
