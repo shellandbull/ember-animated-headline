@@ -1,4 +1,4 @@
-# Ember-animated-headline [![Build Status](https://travis-ci.org/mariogintili/ember-animated-headline.svg?branch=master)](https://travis-ci.org/mariogintili/ember-animated-headline)
+# ember-animated-headline [![Build Status](https://travis-ci.org/mariogintili/ember-animated-headline.svg?branch=master)](https://travis-ci.org/mariogintili/ember-animated-headline)
 
 A small component that animates a list of words :godmode:
 
@@ -24,9 +24,6 @@ import "ember-animated-headline";
 ```handlebars
 {{ember-animated-headline options=options delay=delay}}
 ```
-
-
-
 
 ## Installation
 
