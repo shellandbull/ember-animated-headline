@@ -1,6 +1,6 @@
 {
   "name": "ember-animated-headline",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "An ember component that interexchanges words in a fun, animated way.",
   "directories": {
     "doc": "doc",
@@ -45,7 +45,8 @@
     "headline",
     "ember-animated-headline",
     "ember-animated",
-    "swag"
+    "swag",
+    "yolo"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.5",

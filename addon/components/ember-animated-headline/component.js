@@ -2,20 +2,31 @@ import Ember from 'ember';
 import layout from './template';
 
 const ANIMATION_DELAY = 2500;
-const { $ } = Ember;
+const { $, computed } = Ember;
 
 export default Ember.Component.extend({
 
   // Attrs
   layout: layout,
   classNames: ['ember-animated-headline'],
-  staticContent: 'The world needs more ',
-  dynamicOptions: ['pizza', 'peace', 'potatoes'],
+  delay: ANIMATION_DELAY,
+  tagName: '',
+  optionsArray: [],
+
+  // CPs
+  firstOption: computed('optionsArray.[]', function() {
+    return this.get('optionsArray')[0];
+  }),
+
+  restOptions: computed('optionsArray.[]', function() {
+    const optionsArray = this.get('optionsArray');
+    return optionsArray.slice(1, optionsArray.length);
+  }),
 
   // Hooks
   didInsertElement() {
     this._super(...arguments);
-    const visibleWord = $('.ember-animated-headline--rotate-1').find('.ember-animated-headline__dynamic-option--visible');
+    const visibleWord = $('.ember-animated-headline').find('.ember-animated-headline__dynamic-option--visible');
     this._rotateFromWord(visibleWord);
   },
 
@@ -23,11 +34,11 @@ export default Ember.Component.extend({
   _rotateFromWord(visibleWord) {
     const nextWord = this._nextWord(visibleWord);
     this._switchWords(visibleWord, nextWord);
-    Ember.run.later(this, this._rotateFromWord, nextWord, ANIMATION_DELAY);
+    Ember.run.later(this, this._rotateFromWord, nextWord, this.get('delay'));
   },
 
   _nextWord(visibleWord) {
-    return visibleWord.is(':last-child') ? visibleWord.parent().children().eq(0) : visibleWord.next() ;
+    return visibleWord.is(':last-child') ? visibleWord.parent().children().eq(0) : visibleWord.next();
   },
 
   _switchWords(oldWord, newWord) {
