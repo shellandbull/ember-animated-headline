@@ -1,6 +1,19 @@
-# Ember-animated-headline
+# Ember-animated-headline [![Build Status](https://travis-ci.org/mariogintili/ember-animated-headline.svg?branch=master)](https://travis-ci.org/mariogintili/ember-animated-headline)
 
-This README outlines the details of collaborating on this Ember addon.
+A small component that animates a list of words :godmode:
+
+| parameter | value            | usage                                   |
+|:---------:|------------------|-----------------------------------------|
+| `options` | `['one', 'two']` | the collection of values to be rendered |
+| `delay`   | `2000`           | The animation delay in ms               |
+
+```handlebars
+{{ember-animated-headline options=options delay=delay}}
+```
+
+Will give you:
+
+
 
 ## Installation
 
@@ -11,16 +24,8 @@ This README outlines the details of collaborating on this Ember addon.
 ## Running
 
 * `ember server`
-* Visit your app at http://localhost:4200.
+* Visit `http://localhost:4200`
 
 ## Running Tests
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
 * `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
