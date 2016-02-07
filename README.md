@@ -10,8 +10,8 @@ A small component that animates a list of words :godmode:
 
 And don't forget to add the stylesheet to your `app.scss`
 
-```css
-import "ember-animated-headline";
+```scss
+@import "ember-animated-headline";
 ```
 
 # Usage
