@@ -1,6 +1,6 @@
-# ember-animated-headline [![Build Status](https://travis-ci.org/mariogintili/ember-animated-headline.svg?branch=master)](https://travis-ci.org/mariogintili/ember-animated-headline)
+# ember-animated-headline [![Build Status](https://travis-ci.org/mariogintili/ember-animated-headline.svg?branch=master)](https://travis-ci.org/mariogintili/ember-animated-headline) [![Ember Observer Score](http://emberobserver.com/badges/ember-animated-headline.svg)](http://emberobserver.com/addons/ember-animated-headline)
 
-A small component that animates a list of words :godmode:
+A small component that animates a list of words :unicorn_face: :sun_with_face:
 
 ![](http://i.imgur.com/1VJe1G8.gif)
 

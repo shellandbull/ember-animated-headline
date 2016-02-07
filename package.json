@@ -1,7 +1,9 @@
 {
   "name": "ember-animated-headline",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A small component that animates a list of words",
+  "url": "https://github.com/mariogintili/ember-animated-headline",
+  "homepage": "https://github.com/mariogintili/ember-animated-headline",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,7 +13,10 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mariogintili/ember-animated-headline.git"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
